@@ -39,3 +39,21 @@ This project is currently maintained by:
 ## License
 
 The code is available under the [MIT license](LICENSE.txt).
+
+
+## Usage
+
+```
+sudo ln -s wordpress-configs-nginx/fastcgi-cache.conf .
+sudo ln -s wordpress-configs-nginx/mime.types .
+sudo ln -s wordpress-configs-nginx/nginx.conf .
+sudo ln -s wordpress-configs-nginx/h5bp .
+sudo ln -s wordpress-configs-nginx/wordpress .
+
+$ sudo nano wordpress/location/cross-domain-fonts-secure-example.com.conf
+$ sudo nano sites-available/www.example.com
+$ cd /etc/nginx/sites-enabled
+$ sudo ln -s /etc/nginx/sites-available/www.example.com .
+$ sudo mkdir /usr/share/nginx/logs
+$ sudo nginx -t
+```
